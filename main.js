@@ -41,6 +41,14 @@ async function getData() {
     container.classList.add('container');
     document.body.append(container);
 
+    //add title primary
+    const titlePrimary = document.createElement('h1');
+    titlePrimary.textContent = "The avocado API Platzi"
+    container.insertAdjacentElement("beforebegin", titlePrimary);
+    titlePrimary.className = "fs-1 text-center mb-5 mt-1 fw-bolder"
+
+
+
     //add className to containerItem
     allElements.forEach(elem => {
         elem.className = "d-flex justify-content-center m-2 flex-column border rounded bg-ligth shadow"
